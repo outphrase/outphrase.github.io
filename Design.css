@@ -12,8 +12,31 @@
 	position: absolute;
 	right:0;
 	left:0;
-	top:30%;
+	top:24%;
 	background-image:url('Images/Feature Window 1920x1040.png');
 	width:100%;
 	height:106vh;
 }
+.NewsWindow
+{
+	position: absolute;
+	right:0;
+	left:10.5%;
+	top:139%;
+	background-image:url('Images/News Window 820x970.png');
+	background-repeat:no-repeat;
+	width:100%;
+	height:99vh;
+}
+.AboutWindow
+{
+	position: absolute;
+	right:0;
+	left:57%;
+	top:139%;
+	background-image:url('Images/About Window 683x746.png');
+	background-repeat:no-repeat;
+	width:100%;
+	height:99vh;
+}
+
