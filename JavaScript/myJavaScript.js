@@ -13,9 +13,9 @@ function showSlideShow(zeIndex)
 {
 	var x = document.getElementsByClassName("mySlides");
 	if (zeIndex > x.length || zeIndex < 1) {return;}    
-	currentSlideShowIndex = zeIndex;
 	for (var i = 0; i < x.length; i++) {
 		x[i].style.display = "none";  
 	}
 	x[zeIndex-1].style.display = "block";
- }
+ 	currentSlideShowIndex = zeIndex;
+}
