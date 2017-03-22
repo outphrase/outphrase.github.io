@@ -13,3 +13,41 @@
 	position:relative;
 	margin-right:10%;
 }
+
+.MySlides
+{
+	display:none;
+	position:relative;
+}
+
+div#myBattleSlideImage
+{
+	background-image:url('../Images/battleImage.jpeg');
+	width:100%;
+	height:99vh;
+	background-repeat:no-repeat;
+}
+
+div#myRewardWheelSlideImage
+{
+	background-image:url('../Images/rewardwheelImage.jpeg');
+	width:100%;
+	height:99vh;
+	background-repeat:no-repeat;
+}
+
+div#myScanningSlideImage
+{
+	background-image:url('../Images/scanningImage.jpeg');
+	width:100%;
+	height:99vh;
+	background-repeat:no-repeat;
+}
+
+div#myMapSlideImage
+{
+	background-image:url('../Images/mapImage.jpeg');
+	width:100%;
+	height:99vh;
+	background-repeat:no-repeat;
+}
