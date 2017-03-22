@@ -4,6 +4,7 @@
 .background
 {
  background-image: url('Images/Background 1920x2962.jpg');
+ background-repeat:no-repeat;
  width:100%;
  height:290vh;
 }
@@ -14,6 +15,7 @@
 	left:0;
 	top:24%;
 	background-image:url('Images/Feature Window 1920x1040.png');
+	 background-repeat:no-repeat;
 	width:100%;
 	height:106vh;
 }
@@ -39,4 +41,39 @@
 	width:100%;
 	height:99vh;
 }
+.GooglePlay
+{
+	position:absolute;
+	right:0;
+	left:58%;
+	top:190%;
+	background-image:url('Images/Google Play Icon 646x250.png');
+	background-repeat:no-repeat;
+	width: 100%;
+	height: 99vh;
+}
+.FB
+{
+	position:absolute;
+	right:0;
+	left:73%;
+	top:5%;
 
+	background-image:url('Images/FB Icon 512x512.png');
+	background-repeat:no-repeat;
+	background-size:120px;
+	
+	height: 52vh;
+}
+.Instagram
+{
+	position:absolute;
+	right:0;
+	left:80%;
+	top:5%;
+	background-image:url('Images/Insta Icon 512x512.png');
+	background-repeat:no-repeat;
+	background-size:120px;
+	
+	height: 52vh;
+}
