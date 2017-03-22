@@ -1,0 +1,15 @@
+
+.arrowButton
+{
+	background-color: #333333;
+}
+.slideShowLeftButton
+{
+	position:relative;
+	margin-left:13%;
+}
+.slideShowRightButton
+{
+	position:relative;
+	margin-right:10%;
+}
