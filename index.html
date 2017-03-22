@@ -20,15 +20,19 @@
 <div class = "FeatureWindow">
 	<div class="w3-content w3-section w3-display-containter">
 		<!-- The hardcoded left arrow image button -->
-		<div class="w3-btn arrowButton w3-ripple w3-display-left slideShowLeftButton">
-			<img src="Images/Left Arrow 94x287.png"/>
+		<div class="w3-btn arrowButton w3-ripple w3-display-left slideShowLeftButton" onclick="decrementSlideShow()">
+			<img src="Images/Left Arrow 94x287.png"></img>
 		</div>
 		<!-- The hardcoded right arrow image button -->
-		<div class="w3-btn arrowButton w3-ripple w3-display-right slideShowRightButton">
-			<img src="Images/Right Arrow 94x287.png"/>
+		<div class="w3-btn arrowButton w3-ripple w3-display-right slideShowRightButton" onclick="incrementSlideShow()">
+			<img src="Images/Right Arrow 94x287.png"></img>
 		</div>
 		<!-- Beginning of slideshows -->
-		
+		<!-- Unfortunately need to hardcode otherwise a weird bug will happen -->
+		<div class="mySlides w3-animate-opacity" id="myBattleSlideImage" style="display:block"></div>
+		<div class="mySlides w3-animate-opacity" id="myRewardWheelSlideImage" style="display:none"></div>
+		<div class="mySlides w3-animate-opacity" id="myScanningSlideImage" style="display:none"></div>
+		<div class="mySlides w3-animate-opacity" id="myMapSlideImage" style="display:none"></div>
 		<!-- End of slideshows -->
 	</div>
 </div>
