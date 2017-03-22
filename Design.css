@@ -1,0 +1,19 @@
+*{
+	margin:0;
+}
+.background
+{
+ background-image: url('Images/Background 1920x2962.jpg');
+ width:100%;
+ height:290vh;
+}
+.FeatureWindow
+{
+	position: absolute;
+	right:0;
+	left:0;
+	top:30%;
+	background-image:url('Images/Feature Window 1920x1040.png');
+	width:100%;
+	height:106vh;
+}
