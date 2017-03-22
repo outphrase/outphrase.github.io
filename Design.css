@@ -16,6 +16,14 @@
 	top:285%;
 	
 }
+.background p
+{
+	position:absolute;
+	right:0;
+	left:0;
+	top:270%;
+	text-align:center;
+}
 .FeatureWindow
 {
 	position: absolute;
