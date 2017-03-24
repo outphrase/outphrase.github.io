@@ -24,6 +24,22 @@
 	height:100%;
 }
 
+.MyFB_Button
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:20%;
+}
+
+.MyInsta_Button
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:20%;
+}
+
 div#myBattleSlideImage
 {
 	background-image:url('../Images/battleImage.jpeg');
