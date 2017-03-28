@@ -45,10 +45,9 @@
 .GooglePlay
 {
 	position:absolute;
-	left:650px;
-	top:1900px;
-	width: 565px;
-	height:165px;
+
+	width: 100%;
+	height:100%;
 	background-image:url('Images/Google Play Icon 646x250.png');
 	background-repeat:no-repeat;
 }
