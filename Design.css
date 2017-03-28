@@ -22,19 +22,41 @@ html
 	top:98%;
 	text-align:center;
 }
-.background p
+a
 {
 	position:absolute;
-	right:0%;
-	left:0%;
-	top:96%;
-	text-align:center;
+	left:850px;
+	top:2800px;
+}
+p
+{
+	position:absolute;
+	left:600px;
+	top:2700px;
 }
 p1
 {
 	position:absolute;
 	left:700px;
 	top:1600px;
+}
+p2
+{
+	position:absolute;
+	left:700px;
+	top:1620px;
+}
+p3
+{
+	position:absolute;
+	left:700px;
+	top:1640px;
+}
+p4
+{
+	position:absolute;
+	left:700px;
+	top:1660px;
 }
 .Title
 {
