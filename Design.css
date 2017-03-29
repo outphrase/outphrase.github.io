@@ -18,6 +18,12 @@
 	margin-top:3%;
 	background-color: #efefef;
 }
+#about
+{
+	min-height:400px;
+	margin-top:3%;
+	background-color: #efefef;
+}
 #footer
 {
 	min-height:100px;
@@ -25,7 +31,7 @@
 	color:white;
 	background-color:#666699;
 }
-#header, #menu, #body, #footer
+#header, #menu, #body, #about, #footer
 {
 	margin-left:10%;
 	margin-right:10%;
