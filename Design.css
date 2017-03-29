@@ -22,6 +22,7 @@
 {
 	min-height:100px;
 	margin-top:3%;
+	color:white;
 	background-color:#666699;
 }
 #header, #menu, #body, #footer
@@ -42,20 +43,56 @@
 	width:extend-to-zoom;
 	zoom:1.0;
 }
+.screenshot1
+{
+	display:inline-block;
+	margin-left:4%;
+	width: 400px;
+	height:710px;
+	background-image:url('Images/mapImage.jpeg');
+	background-repeat:no-repeat;
+	border-style: solid;
+    border-width: 5px;
+	
+}
+.screenshot2
+{
+	display:inline-block;
+	margin-left:4%;
+	width: 400px;
+	height:710px;
+	background-image:url('Images/battleImage.jpg');
+	background-repeat:no-repeat;
+	border-style: solid;
+    border-width: 5px;
+	
+}
+.screenshot3
+{
+	display:inline-block;
+	margin-left:4%;
+	width: 400px;
+	height:710px;
+	background-image:url('Images/rewardwheelImage.jpg');
+	background-repeat:no-repeat;
+	border-style: solid;
+    border-width: 5px;
+}
 .GooglePlay
 {
-	position:absolute;
-
-	width: 100%;
-	height:100%;
-	background-image:url('Images/Google Play Icon 646x250.png');
+	
+	display:block;
+	margin:0 auto;
+	width: 300px;
+	height:89px;
+	background-image:url('Images/Google Play Icon 300x89.png');
 	background-repeat:no-repeat;
+	
 }
 .FB
 {
-	position:absolute;
-	left:1700px;
-	top:100px;
+	display:inline-block;
+	margin-left:2%;
 	width: 100px;
 	height: 100px;
 	background-image:url('Images/FB Icon 100x100.png');
@@ -63,9 +100,8 @@
 }
 .Instagram
 {
-	position:absolute;
-	left:1550px;
-	top:100px;
+	display:inline-block;
+	margin-left:2%;
 	width: 100px;
 	height: 100px;
 	background-image:url('Images/Insta Icon 100x100.png');
