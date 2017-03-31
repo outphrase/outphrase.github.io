@@ -1,99 +1,116 @@
 *{
 	margin:0;
 }
-html
-{
-	min-height:100%;
-}
-.background
-{
-	position:absolute;
-	background-image: url('Images/Background 1920x2962.jpg');
-	background-repeat:no-repeat;
-	width:100%;
-	height:290vh;
-	z-index:-100;
-}
-.background a
-{
-	position:absolute;
-	right:0%;
-	left:0%;
-	top:98%;
-	text-align:center;
-}
-a
-{
-	position:absolute;
-	left:850px;
-	top:2800px;
-}
-p
-{
-	position:absolute;
-	left:600px;
-	top:2700px;
-}
-p1
-{
-	position:absolute;
-	left:700px;
-	top:1600px;
-}
-p2
-{
-	position:absolute;
-	left:700px;
-	top:1620px;
-}
-p3
-{
-	position:absolute;
-	left:700px;
-	top:1640px;
-}
-p4
-{
-	position:absolute;
-	left:700px;
-	top:1660px;
-}
-.Title
-{
-	position:absolute;
-	left:600px;
-	top:40px;
-	width: 600px;
-	height:100px;
-	background-image:url('Images/NYP Logo 512x120.png');
-	background-repeat:no-repeat;
-}
-.FeatureWindow
-{
-	position:absolute;
-	left:0px;
-	top:300px;
-	width: 1900px;
-	height:1100px;
-	background-image:url('Images/Feature Window 1565x886(2).png');
-	background-repeat:no-repeat;
-}
 
+#header
+{
+	min-height:200px;
+	background-color:#666699;
+	background-image: url('Images/Header Bar.jpg');
+    background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+#menu
+{
+	min-height:40px;
+	background-color:#999999;
+}
+#body
+{
+	min-height:400px;
+	margin-top:3%;
+	background-color: #efefef;
+}
+#about
+{
+	min-height:400px;
+	margin-top:3%;
+	background-color: #efefef;
+}
+#footer
+{
+	min-height:100px;
+	margin-top:3%;
+	color:white;
+	background-color:#666699;
+}
+#header, #menu, #body, #about, #footer
+{
+	margin-left:10%;
+	margin-right:10%;
+	
+	box-shadow:3px 5px 7px #666666;
+	border:1px solid black;
+	
+}
+#menu, #body
+{
+	background-image: url('Images/Website Background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	
+}
+@viewport
+{
+	zoom:1.0;
+	width:extend-to-zoom;
+}
+@-ms-viewport
+{
+	width:extend-to-zoom;
+	zoom:1.0;
+}
+.screenshot1
+{
+	display:inline-block;
+	margin-left:4%;
+	width: 400px;
+	height:710px;
+	background-image:url('Images/mapImage.jpeg');
+	background-repeat:no-repeat;
+	border-style: solid;
+    border-width: 5px;
+	
+}
+.screenshot2
+{
+	display:inline-block;
+	margin-left:4%;
+	width: 400px;
+	height:710px;
+	background-image:url('Images/battleImage.jpg');
+	background-repeat:no-repeat;
+	border-style: solid;
+    border-width: 5px;
+	
+}
+.screenshot3
+{
+	display:inline-block;
+	margin-left:4%;
+	width: 400px;
+	height:710px;
+	background-image:url('Images/rewardwheelImage.jpg');
+	background-repeat:no-repeat;
+	border-style: solid;
+    border-width: 5px;
+}
 .GooglePlay
 {
-	position:absolute;
-	left:650px;
-	top:1900px;
-	width: 565px;
-	height:165px;
-	background-image:url('Images/Google Play Icon 646x250.png');
+	
+	display:block;
+	margin:0 auto;
+	width: 300px;
+	height:89px;
+	background-image:url('Images/Google Play Icon 300x89.png');
 	background-repeat:no-repeat;
+	
 }
 .FB
 {
-	position:absolute;
-	left:1700px;
-	top:100px;
+	display:inline-block;
+	margin-left:2%;
 	width: 100px;
 	height: 100px;
 	background-image:url('Images/FB Icon 100x100.png');
@@ -101,9 +118,8 @@ p4
 }
 .Instagram
 {
-	position:absolute;
-	left:1550px;
-	top:100px;
+	display:inline-block;
+	margin-left:2%;
 	width: 100px;
 	height: 100px;
 	background-image:url('Images/Insta Icon 100x100.png');
