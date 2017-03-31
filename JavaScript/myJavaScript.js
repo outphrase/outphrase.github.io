@@ -20,3 +20,10 @@ function showSlideShow(zeIndex)
  	currentSlideShowIndex = zeIndex;
 }
 
+function changeTheResolutionValues()
+{
+	document.getElementById("ChangeRes").innerHTML = "Resolution:" + window.innerWidth + "x" + window.innerHeight;
+}
+
+// Adding a listener to the window
+window.addEventListener("resize", changeTheResolutionValues);
