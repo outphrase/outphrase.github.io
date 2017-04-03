@@ -1,15 +1,12 @@
-*{
-	margin:0;
-}
 
 #header
 {
-	min-height:200px;
+	min-height:200px; /*Set minimum height of the header to the 200px*/
 	background-color:#666699;
 	background-image: url('Images/Website Header V2 1920x300.jpg');
-    background-repeat: no-repeat;
-	background-size:cover;
-	background-position:center;
+    background-repeat: no-repeat; /*Set background to no-repeat because you don't want to repeat it?*/
+	background-size:cover; /*this stretch the image to cover the whole thing, note that some part of the image will be crop away*/
+	background-position:center; /*centralise the image, it is also because image will stay center when you try to zoom in or out*/
 }
 #menu
 {
@@ -19,7 +16,7 @@
 #body
 {
 	min-height:400px;
-	margin-top:3%;
+	margin-top:3%; /*Puts 3% worth of space in between the body(screenshot) and menu */
 	background-color: #efefef;
 }
 #about
@@ -32,11 +29,12 @@
 {
 	min-height:100px;
 	margin-top:3%;
-	color:white;
+	color:white; /*This sets the color of the fonts*/
 	background-color:#666699;
 }
 #header, #menu, #body, #about, #footer
 {
+	/*Set everything to have these elements*/
 	margin-left:10%;
 	margin-right:10%;
 	
@@ -46,23 +44,26 @@
 }
 #menu, #body
 {
+	/*Setting a fixed background for menu and body(screenshot), because you can*/
 	background-image: url('Images/Website Background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
 	
 }
 @viewport
-{
+{{
 	zoom:1.0;
 	width:extend-to-zoom;
-}
+}}
 @-ms-viewport
-{
+{{
+	/*fixed for internet explorer*/
 	width:extend-to-zoom;
 	zoom:1.0;
-}
+}}
 .screenshot1
 {
+	/*inline-block enables something to fill the browser width and wrap nicely when the browser is resized*/
 	display:inline-block;
 	margin-left:4%;
 	width: 400px;
