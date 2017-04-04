@@ -13,7 +13,7 @@
 function goToApp()
 {
 	<!-- If this is an android phone -->
-	if (navigator.userAgent.indexOf('Android') != -1 && isRunningStandAloneAndroid())
+	if (navigator.userAgent.indexOf('Android') != -1)
 	{
 		document.location.href = 'intent:#Intent;action=android.intent.action.MAIN;end';	
 		return false;
