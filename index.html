@@ -15,7 +15,7 @@ function goToApp()
 	<!-- If this is an android phone -->
 	if (navigator.userAgent.indexOf('Android') != -1)
 	{
-		document.location.href = 'intent:#Intent;action=android.intent.action.MAIN;end';	
+		document.location.href = 'intent:#Intent;action=NYPGO25;end';	
 		return false;
 	}
 	document.location.href = 'https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en';
@@ -33,6 +33,11 @@ $('a.GooglePlay').on('click', function (event) {
     // we don't want the default browser behavior kicking in and screwing everything up.
     event.preventDefault();
 });
+function uriSchemeWithHyperlinkFallback(uri, href) {
+    if(!window.open(uri)){
+        window.location = href;
+    }
+}
 </script>
 <body>
 
@@ -73,8 +78,8 @@ We take appropriate administrative, physical, and electronic measures designed t
 you or your authorized child from accidental or unlawful destruction, accidental loss or unauthorized access, use, modification, interference,
 or disclosure. Please be aware, however, that no method of transmitting information over the Internet or storing information is completely
 secure. Accordingly, we cannot guarantee the absolute security of any information.
-	<!-- <a href="#" class="GooglePlay" onclick="goToApp()"></a> -->
-	<a href="https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en" data-scheme="NYPGo://" class="GooglePlay"></a>
+	<a href="#" class="GooglePlay" onclick="goToApp()"></a>
+	<!-- <a href="https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en" data-scheme="NYPGo://" class="GooglePlay"></a> -->
 	</div>
 </body>
 </html>
