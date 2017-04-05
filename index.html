@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="Design.css">
 <!-- Linked to Google jquery -->
-\<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <!-- Own Javascript -->
 <!-- <script type="text/javascript" src="javaScript/myJavaScript.js"></script> -->
 </head>
@@ -27,6 +27,7 @@ function isRunningStandAloneAndroid()
 	return (window.matchMedia('(display-mode: standalone)').matches);
 }
 
+// This is jquery script
 $('a.GooglePlay').on('click', function (event) {
     uriSchemeWithHyperlinkFallback($(this).data('scheme'), $(this).attr('href'));
     // we don't want the default browser behavior kicking in and screwing everything up.
