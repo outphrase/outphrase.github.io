@@ -1,7 +1,7 @@
 /* This CSS is done by sek heng */
 .arrowButton
 {
-	background-color: #333333;
+	background-color: transparent;
 }
 
 .slideShowLeftButton
@@ -22,6 +22,24 @@
 	position:relative;
 	width:100%;
 	height:100%;
+}
+
+.MyFB_Button
+{
+	position:relative;
+	width:100px;
+	height:100px;
+	top:0%;
+	background-color: transparent;
+}
+
+.MyInsta_Button
+{
+	position:relative;
+	width:100px;
+	height:100px;
+	top:0%;
+	background-color: transparent;
 }
 
 div#myBattleSlideImage
