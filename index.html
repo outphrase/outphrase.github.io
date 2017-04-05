@@ -15,7 +15,7 @@ function goToApp()
 	<!-- If this is an android phone -->
 	if (navigator.userAgent.indexOf('Android') != -1)
 	{
-		document.location.href = 'intent:#Intent;scheme=launch;action=android.intent.action.MAIN;end';	
+		document.location.href = 'intent:#Intent;action=android.intent.action.MAIN;end';	
 		return false;
 	}
 	document.location.href = 'https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en';
