@@ -13,7 +13,7 @@
 function goToApp(uri, href)
 {
 	<!-- If this is an android phone -->
-	if (navigator.userAgent.indexOf('Android') != -1)
+	//if (navigator.userAgent.indexOf('Android') != -1)
 	{
 		//document.location.href = 'intent:#Intent;scheme=nypgo25://;package=com.unity3d.player;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en;end';	
 		//window.open("vnd.youtube://");
@@ -42,18 +42,13 @@ $('a.GooglePlay').on('click', function (event) {
 // param href: the link to fall back to if the app can't be open
 function uriSchemeWithHyperlinkFallback(uri, href) {
 	// Used a function so that can activate the website link! 500 milliseconds to check before it goes to the website link!
-	document.location.href = href;
+	window.open(uri, "_self");
 	var toOpenAppStoreIfFailedToOpenApp = setTimeout(
 	function() 
 	{
-		//window.close(uri);
 		document.location.href = href;
 	}, 500);
-	var checkIfAppOpened = window.open(uri, "_self");
-	if(checkIfAppOpened != null){
-		// Have to clear time out otherwise it will open the google playstore!
-		clearTimeout(toOpenAppStoreIfFailedToOpenApp);
-    }
+	window.open(uri, "_self");
 }
 
 </script>
