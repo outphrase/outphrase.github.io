@@ -38,9 +38,14 @@ $('a.GooglePlay').on('click', function (event) {
     // we don't want the default browser behavior kicking in and screwing everything up.
     event.preventDefault();
 });
+// param uri: it is the application scheme
+// param href: the link to fall back to if the app can't be open
 function uriSchemeWithHyperlinkFallback(uri, href) {
-    if(!window.open(uri)){
-        window.location = href;
+	// Used a function so that can activate the website link!
+    var toOpenAppStoreIfFailedToOpenApp = setTimeout(function() {document.location.href = href;}, 2000)
+	if(window.open(uri)){
+		// Have to clear time out otherwise it will open the google playstore!
+        clearTimeout(toOpenAppStoreIfFailedToOpenApp);
     }
 }
 
