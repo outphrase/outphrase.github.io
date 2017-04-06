@@ -32,7 +32,7 @@ function isRunningStandAloneAndroid()
 	return (window.matchMedia('(display-mode: standalone)').matches);
 }
 
-// This is jquery script
+// This is jquery script taken from: https://gist.github.com/kmallea/6784568
 $('a.GooglePlay').on('click', function (event) {
     uriSchemeWithHyperlinkFallback($(this).data('scheme'), $(this).attr('href'));
     // we don't want the default browser behavior kicking in and screwing everything up.
@@ -44,48 +44,6 @@ function uriSchemeWithHyperlinkFallback(uri, href) {
     }
 }
 
-var QueryString = (function () {
-  var query_string = {};
-  var query = window.location.search.substring(1);
-  var vars = query.split("&");
-  for (var i=0;i<vars.length;i++) {
-    var pair = vars[i].split("=");
-    if (typeof query_string[pair[0]] === "undefined") {
-      query_string[pair[0]] = pair[1];
-    } else if (typeof query_string[pair[0]] === "string") {
-      var arr = [ query_string[pair[0]], pair[1] ];
-      query_string[pair[0]] = arr;
-    } else {
-      query_string[pair[0]].push(pair[1]);
-    }
-  }
-    return query_string;
-}) ();
-
-function open_store() {
-	console.log("Timeout. Open fallback url: " + QueryString.storeURL) ;	    	
-	document.location.href = QueryString.storeURL ;	    	 
-}	    
-
-var timeout;
-function open_store_timeout() {
-    timeout = setTimeout('open_store()', 400);
-}
-function open_app() {
-	var customSchemeURL = QueryString.customSchemeURL ;	 
-	var customParams = "" ;
-	var separador = "" ;
-	for (var key in QueryString) {
-		if (["customSchemeURL", "storeURL"].indexOf(key) < 0) {
-			customParams += separador + key + "=" + QueryString[key] ;
-			separador = "&" ;
-		}
-	}   	
-	var appURL = QueryString.customSchemeURL + "?" + customParams ;
-	document.location.href = appURL ;		
-	console.log("Opening URL: " + appURL) ;
-	open_store_timeout() ;
-}
 </script>
 <body>
 
@@ -126,8 +84,8 @@ We take appropriate administrative, physical, and electronic measures designed t
 you or your authorized child from accidental or unlawful destruction, accidental loss or unauthorized access, use, modification, interference,
 or disclosure. Please be aware, however, that no method of transmitting information over the Internet or storing information is completely
 secure. Accordingly, we cannot guarantee the absolute security of any information.
-	<a href="#" class="GooglePlay" onclick="goToApp()"></a> 
-	<!-- <a href="https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en" data-scheme="NYPGo://" class="GooglePlay"></a> -->
+	<!-- <a href="#" class="GooglePlay" onclick="goToApp()"></a>  -->
+	<a href="https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en" data-scheme="nypgo25://" class="GooglePlay"></a>
 	</div>
 </body>
 </html>
