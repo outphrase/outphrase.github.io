@@ -10,7 +10,7 @@
 </head>
 <script type="text/javascript" charset="utf-8">
 <!-- Main purpose of this is to launch the app from android phone and see if it works! -->
-function goToApp()
+function goToApp(uri, href)
 {
 	<!-- If this is an android phone -->
 	if (navigator.userAgent.indexOf('Android') != -1)
@@ -20,10 +20,10 @@ function goToApp()
 		//uriSchemeWithHyperlinkFallback("vnd.youtube://", "https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en")
 		//uriSchemeWithHyperlinkFallback("vnd.fb://", "https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en")
 		//document.location.href = "http://appurl.io/j14pi4uh/";
-		uriSchemeWithHyperlinkFallback("nypgo25://", 'https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en');
+		uriSchemeWithHyperlinkFallback(uri, href);
 		return false;
 	}
-	document.location.href = 'https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en';
+	document.location.href = href;
 	return false;
 }
 <!-- Check whether is it running from an android device using display standalone -->
@@ -96,7 +96,7 @@ We take appropriate administrative, physical, and electronic measures designed t
 you or your authorized child from accidental or unlawful destruction, accidental loss or unauthorized access, use, modification, interference,
 or disclosure. Please be aware, however, that no method of transmitting information over the Internet or storing information is completely
 secure. Accordingly, we cannot guarantee the absolute security of any information.
-	<a href="#" class="GooglePlay" onclick="goToApp()"></a> 
+	<a href="#" class="GooglePlay" onclick="goToApp('nypgo25://', 'https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en')"></a> 
 	<!-- <a href="https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en" data-scheme="nypgo25://" class="GooglePlay"></a> -->
 	</div>
 </body>
