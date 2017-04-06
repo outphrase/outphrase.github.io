@@ -15,12 +15,12 @@ function goToApp(uri, href)
 	<!-- If this is an android phone -->
 	if (navigator.userAgent.indexOf('Android') != -1)
 	{
-		document.location.href = 'intent:#Intent;scheme=nypgo25;package=com.unity3d.player;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en;end';	
+		//document.location.href = 'intent:#Intent;scheme=nypgo25;package=com.unity3d.player;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en;end';	
 		//window.open("vnd.youtube://");
 		//uriSchemeWithHyperlinkFallback("vnd.youtube://", "https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en")
 		//uriSchemeWithHyperlinkFallback("vnd.fb://", "https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en")
 		//document.location.href = "http://appurl.io/j14pi4uh/";
-		//uriSchemeWithHyperlinkFallback(uri, href);
+		uriSchemeWithHyperlinkFallback(uri, href);
 		return false;
 	}
 	document.location.href = href;
@@ -49,38 +49,6 @@ function uriSchemeWithHyperlinkFallback(uri, href) {
 		document.location.href = href;
 	}, 500);
 }
-
-(function () {
-
-    // tries to execute the uri:scheme
-    function goToUri(uri, href) {
-        var start, end, elapsed;
-
-        // start a timer
-        start = new Date().getTime();
-
-        // attempt to redirect to the uri:scheme
-        // the lovely thing about javascript is that it's single threadded.
-        // if this WORKS, it'll stutter for a split second, causing the timer to be off
-        document.location = uri;
-
-        // end timer
-        end = new Date().getTime();
-
-        elapsed = (end - start);
-
-        // if there's no elapsed time, then the scheme didn't fire, and we head to the url.
-        if (elapsed < 1) {
-            document.location = href;
-        }
-    }
-
-    $('a.GooglePlay').on('click', function (event) {
-        goToUri($(this).data('scheme'), $(this).attr('href'));
-        event.preventDefault();
-    });
-})();
-
 </script>
 <body>
 
@@ -121,8 +89,8 @@ We take appropriate administrative, physical, and electronic measures designed t
 you or your authorized child from accidental or unlawful destruction, accidental loss or unauthorized access, use, modification, interference,
 or disclosure. Please be aware, however, that no method of transmitting information over the Internet or storing information is completely
 secure. Accordingly, we cannot guarantee the absolute security of any information.
-	<!-- <a href="#" class="GooglePlay" onclick="goToApp('nypgo25://details?id=com.SIDM.NYP25JProto', 'https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en')"></a>  -->
-	<a href="https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en" data-scheme="nypgo25://" class="GooglePlay"></a>
+	<a href="#" class="GooglePlay" onclick="goToApp('nypgo25://details?id=com.SIDM.NYP25JProto', 'https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en')"></a>
+	<!-- <a href="https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en" data-scheme="nypgo25://" class="GooglePlay"></a> -->
 	</div>
 </body>
 </html>
