@@ -45,7 +45,7 @@ function uriSchemeWithHyperlinkFallback(uri, href) {
  	var toOpenAppStoreIfFailedToOpenApp = setTimeout(
 	function() 
 	{
-		window.close(uri);
+		//window.close(uri);
 		document.location.href = href;
 	}, 500);
 	if(window.open(uri, "_self") != null){
