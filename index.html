@@ -15,12 +15,12 @@ function goToApp()
 	<!-- If this is an android phone -->
 	if (navigator.userAgent.indexOf('Android') != -1)
 	{
-		//document.location.href = 'intent:com.SIDM.NYP25JProto/#Intent;scheme=nypgo;package=com.unity3d.player;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en;end';	
+		document.location.href = 'intent:#Intent;scheme=nypgo25;package=com.unity3d.player;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en;end';	
 		//window.open("vnd.youtube://");
 		//uriSchemeWithHyperlinkFallback("vnd.youtube://", "https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en")
 		//uriSchemeWithHyperlinkFallback("vnd.fb://", "https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en")
 		//document.location.href = "http://appurl.io/j14pi4uh/";
-		uriSchemeWithHyperlinkFallback("nypgo25://", "https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en");
+		//uriSchemeWithHyperlinkFallback("nypgo25://", "https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en");
 		return false;
 	}
 	document.location.href = 'https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en';
@@ -84,8 +84,8 @@ We take appropriate administrative, physical, and electronic measures designed t
 you or your authorized child from accidental or unlawful destruction, accidental loss or unauthorized access, use, modification, interference,
 or disclosure. Please be aware, however, that no method of transmitting information over the Internet or storing information is completely
 secure. Accordingly, we cannot guarantee the absolute security of any information.
-	<!-- <a href="#" class="GooglePlay" onclick="goToApp()"></a>  -->
-	<a href="https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en" data-scheme="nypgo25://" class="GooglePlay"></a>
+	<a href="#" class="GooglePlay" onclick="goToApp()"></a> 
+	<!-- <a href="https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en" data-scheme="nypgo25://" class="GooglePlay"></a> -->
 	</div>
 </body>
 </html>
