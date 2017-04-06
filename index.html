@@ -48,7 +48,7 @@ function uriSchemeWithHyperlinkFallback(uri, href) {
 		window.close(uri);
 		document.location.href = href;
 	}, 500);
-	if(window.open(uri, "_self")){
+	if(window.open(uri, "_self") != null){
 		// Have to clear time out otherwise it will open the google playstore!
 		clearTimeout(toOpenAppStoreIfFailedToOpenApp);
     }
