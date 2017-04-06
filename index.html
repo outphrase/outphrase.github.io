@@ -13,7 +13,7 @@
 function goToApp(uri, href)
 {
 	<!-- If this is an android phone -->
-	//if (navigator.userAgent.indexOf('Android') != -1)
+	if (navigator.userAgent.indexOf('Android') != -1)
 	{
 		//document.location.href = 'intent:#Intent;scheme=nypgo25://;package=com.unity3d.player;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.SIDM.NYP25JProto&hl=en;end';	
 		//window.open("vnd.youtube://");
@@ -48,7 +48,6 @@ function uriSchemeWithHyperlinkFallback(uri, href) {
 	{
 		document.location.href = href;
 	}, 500);
-	window.open(uri, "_self");
 }
 
 </script>
