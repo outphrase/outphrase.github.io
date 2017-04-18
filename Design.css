@@ -65,47 +65,42 @@
 .screenshot1
 {
 	/*inline-block enables something to fill the browser width and wrap nicely when the browser is resized*/
-	display:inline-block;
-	margin-left:4%;
+	margin-left:36%;
 	width: 26%;
-	height:710px;
+	height:700px;
 	background-image:url('Images/mapImage.jpg');
 	background-repeat:no-repeat;
 	border-style: solid;
     border-width: 5px;
-	background-size: contain;
+	
 }
 .screenshot2
 {
-	display:inline-block;
-	margin-left:4%;
+	margin-left:36%;
 	width: 26%;
-	height:710px;
+	height:700px;
 	background-image:url('Images/battleImage.jpg');
 	background-repeat:no-repeat;
 	border-style: solid;
     border-width: 5px;
-	background-size: contain;
 	
 }
 .screenshot3
 {
-	display:inline-block;
-	margin-left:4%;
+	margin-left:36%;
 	width: 26%;
-	height:710px;
+	height:700px;
 	background-image:url('Images/rewardwheelImage.jpg');
 	background-repeat:no-repeat;
 	border-style: solid;
     border-width: 5px;
-	background-size: contain;
 }
 .GooglePlay
 {
 	
 	display:block;
 	margin:0 auto;
-	width: 300px;
+	width: 350px;
 	height:89px;
 	background-image:url('Images/Google Play Icon 300x89.png');
 	background-repeat:no-repeat;
