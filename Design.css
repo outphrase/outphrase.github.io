@@ -67,12 +67,12 @@
 	/*inline-block enables something to fill the browser width and wrap nicely when the browser is resized*/
 	margin-left:36%;
 	width: 26%;
-	height:700px;
+	min-height:700px;
 	background-image:url('Images/mapImage.jpg');
 	background-repeat:no-repeat;
 	border-style: solid;
     border-width: 5px;
-	
+	background-size:contain;
 }
 .screenshot2
 {
@@ -83,7 +83,7 @@
 	background-repeat:no-repeat;
 	border-style: solid;
     border-width: 5px;
-	
+	background-size:contain;
 }
 .screenshot3
 {
@@ -94,6 +94,7 @@
 	background-repeat:no-repeat;
 	border-style: solid;
     border-width: 5px;
+	background-size:contain;
 }
 .GooglePlay
 {
